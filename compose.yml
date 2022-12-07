@@ -1,0 +1,75 @@
+services:
+  server:
+    build:
+      context: "/backend/server"
+      dockerfile: "lin-server.dockerfile"
+    container_name: LinServer
+    hostname: technovine-svr
+    privileged: true
+    ports:
+      - 22
+      - 80
+      - 443
+    networks:
+      - admin
+      - backend
+      - vpn
+      - dev
+    volumes:
+      - type: bind
+        source: "Z:\\Docker\\DevContainers\\Technovine\\Lin-Server"
+        target: "/vol/server"
+        read_only: false
+      - type: bind
+        source: "Z:\\Docker\\DevContainers\\Technovine\\Site-Storage"
+        target: "/vol/site"
+        read_only: false
+      - type: bind
+        source: "Z:\\Docker\\DevContainers\\Technovine\\Database"
+        target: "/vol/db"
+        read_only: false
+        
+  webhost:
+    build:
+      context: "/backend/nginx"
+      dockerfile: "nginx.dockerfile"
+    container_name: "Webhost"
+    hostname: "technovine-host"
+    privileged: false
+    # network_mode: "host"
+    cap_add:
+      - NET_ADMIN
+    networks:
+      - admin
+      - frontend
+      - backend
+      - vpn
+    
+  vpn:
+    image:            tailscale/tailscale:latest
+    container_name:   tailscale
+    hostname:         tailscale
+    privileged:       true
+    network_mode:     "host"
+    cap_add:
+      - NET_ADMIN
+      - SYS_MODULE
+    command: [
+        'tailscaled'
+      ]
+    restart: unless-stopped
+    volumes:
+      - "/opt/appdata/tailscale/var_lib:/var/lib"
+      - "/dev/net/tun:/dev/net/tun"
+
+
+# Environment Configuration
+networks:
+  admin: {}
+  frontend: {}
+  backend: {}
+  vpn: {}
+  dev: {}
+
+secrets:
+  mysql: "/backend/db/db-password.txt"

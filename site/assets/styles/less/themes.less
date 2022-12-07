@@ -1,0 +1,83 @@
+@import (less) "./font-maps.less";
+
+#theme.dark {
+	.colors(bg) {
+		base: 			hsla(0, 0%, 10%, 1.0);
+		mainCont: 		lighten($base, 10%);
+		basicDiv: 		lighten($mainCont, 10%);
+		headCont: 		lighten($basicDiv, 10%);
+		codeTerm: 		hsla(205, 100%, 10%, 1.0);
+	}
+	
+	
+	//- Page Header
+	.cont(headers) {
+		margins: 		8.33%;
+		paddingTop:		5px;
+		paddingSide:	4.16%;
+		paddingBottom:	1px;
+		corners: 		20px;
+		shadowColor: 	hsla(0, 0%, 0%, 0.8);
+		boxOutShadow: 	1 1 3 $shadowColor;
+		boxInShadow: 	1 1 3 $shadowColor inset;
+	}
+	.text(headers) {
+		titles: 		hsla(0, 0%, 100%, 1.0);
+		subTitles: 		darken($titles, 5%);
+		subText: 		darken($subTitles, 5%);
+	}
+	
+
+	//- Main Body
+	.cont(body) {
+		margins: 		8.33%;
+	}
+	.text(body) {
+		headers: 		hsla(205, 75%, 90%, 1.0);
+		subHeaders: 	darken($headers, 10%);
+		para: 			hsla(0, 0%, 85%, 1.0);
+		subText: 		darken($para, 20%);
+	}
+	.cont(main) {
+		sidePadding: 	8.33%;
+		topPadding: 	1em;
+	}
+	.cont(code) {
+		consolePadd: 	10px;
+		codeAttach: 	scroll;
+		lineHeight: 	150%;
+	}
+	.cont(term) {
+		borderColor: 	hsla(195, 14%, 39%, 1);
+		shadowColor: 	hsla(0, 0%, 0%, 0.9);
+		termBorder: 	1.5px solid $borderColor;
+		innerShadow: 	1px 1px 3px $shadowColor inset;
+		corners: 		10px;
+		termAttach: 	fixed;
+	}
+}
+
+#theme.light {
+	.colors(bg) {
+		base: 			hsla(0, 0%, 90%, 1.0);
+		mainCont: 		darken($base, 10%);
+		basicDiv: 		darken($mainCont, 10%);
+		headCont: 		darken($basicDiv, 10%);
+		codeTerm: 		hsla(205, 100%, 10%, 1.0);
+	}
+	.cont(headers) {
+		margins: 		8.33%;
+		paddingTop:		5px;
+		paddingSide:	4.16%;
+		paddingBottom:	1px;
+		corners: 		20px;
+		shadowColor: 	hsla(0, 0%, 0%, 0.8);
+		boxOutShadow: 	1 1 3 $shadowColor;
+		boxInShadow: 	1 1 3 $shadowColor inset;
+	}
+	.text(headers) {
+		titles: 		hsla(0, 0%, 0%, 1.0);
+		subTitles: 		lighten($titles, 5%);
+		subText: 		lighten($subTitles, 5%);
+	}
+}

@@ -1,0 +1,49 @@
+@import "../../fonts/css-imports/google-fonts.css";
+.headContainer {
+  margin-left: 8.33%;
+  margin-right: 8.33%;
+  background-color: hsl(0, 0%, 40%);
+}
+.headContainer header {
+  padding-top: 5px;
+  padding-left: 4.16%;
+  padding-right: 4.16%;
+  padding-bottom: 1px;
+}
+.headContainer header h1 {
+  color: hsl(0, 0%, 100%);
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.headContainer header h2 {
+  color: hsl(0, 0%, 95%);
+  font-family: "Assistant", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-top: -1.2em;
+}
+body {
+  background-color: hsl(0, 0%, 10%);
+  background-size: cover;
+}
+body h1,
+body h2,
+body h3,
+body h4 {
+  font-family: "Red Hat Display", sans-serif;
+  color: hsl(205, 75%, 90%);
+}
+body .terminal {
+  background-color: hsl(205, 100%, 10%);
+  background-attachment: fixed;
+  border: 1.5px solid hsl(195, 14%, 39%);
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px hsla(0, 0%, 0%, 0.9) inset;
+  margin: 8.33%;
+}
+body .terminal pre {
+  padding: 10px;
+  background-attachment: scroll;
+  line-height: 150%;
+}
