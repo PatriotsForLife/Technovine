@@ -1,0 +1,8 @@
+#|========================================|#
+#|  This Git Ignore applies specifically  |#
+#|  to the Website's Files & Directories  |#
+#|========================================|#
+
+# Exclude all Objects & Archives ([.zip], [.tar], etc)
+*.[oa]
+
