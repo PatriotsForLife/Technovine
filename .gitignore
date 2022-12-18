@@ -31,15 +31,15 @@
 		**/.*temp*.*
 
 #★ Project Drafts
-	!/.projects/Drafts/_Templates/**
+	/.projects/Drafts/!_Templates/**
 	/.projects/Drafts/Issues/*.md
 	/.projects/Drafts/Tasks/*.md
 
 	#- Issues
-		/.projects/Drafts/Issues/Comments/*.*
-		/.projects/Drafts/Issues/Descriptions/*.*
+		/.projects/Drafts/Issues/Comments/*.md
+		/.projects/Drafts/Issues/Descriptions/*.md
 
 	#- Tasks
-		/.projects/Drafts/Tasks/Comments/*.*
-		/.projects/Drafts/Tasks/Descriptions/*.*
+		/.projects/Drafts/Tasks/Comments/*.md
+		/.projects/Drafts/Tasks/Descriptions/*.md
 		
