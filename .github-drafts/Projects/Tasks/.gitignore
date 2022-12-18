@@ -1,0 +1,20 @@
+#|========================================|#
+#|  This Git Ignore applies specifically  |#
+#|    to the Repo's  '../Tasks'  Folder   |#
+#|========================================|#
+#|
+#|
+#|===============================|#
+#|  Keep track of the following  |#
+#|===============================|#
+#|
+#| ★ Documentation
+#|	  - [README] File Patterns
+!*.README.*
+!*README.*
+!README.*
+#|
+#| ★ Placeholders
+#|	  - [placeholder] File Patterns
+!.placeholder
+!placeholder

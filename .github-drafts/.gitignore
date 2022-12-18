@@ -1,0 +1,30 @@
+#|========================================|#
+#|  This Git Ignore applies specifically  |#
+#|   to the Repo's  '/.md-drafts' Folder  |#
+#|========================================|#
+#|
+#|
+#|===============================|#
+#|  Keep track of the following  |#
+#|===============================|#
+#|
+#| ★ Documentation
+#|	  - [README] File Patterns
+!*-README.*
+!*.README.*
+!*README.*
+!README.*
+#|
+#|==========================|#
+#|  Ignore Document Drafts  |#
+#|==========================|#
+#|
+#| ★ Document Files
+#|	  - Markup Languages
+*.md
+*.rtf
+*.html
+*.wiki
+*.mediawiki
+#|	  - Basic Binary Documents
+*.txt
