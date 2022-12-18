@@ -34,6 +34,7 @@
 	/.projects/Drafts/!_Templates/**
 	/.projects/Drafts/Issues/*.md
 	/.projects/Drafts/Tasks/*.md
+	/.projects/Drafts/*/*/*.md
 
 	#- Issues
 		/.projects/Drafts/Issues/Comments/*.md
