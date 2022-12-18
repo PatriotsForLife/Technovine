@@ -30,10 +30,8 @@
 #★ Temporary Files
 
 #- Name: 'temp'
-**/*.temp*.*
-**/*.temp.*
-**/*temp.*
-**/.*temp*.*
+*.temp.*
+*temp.*
 
 
 #============================
