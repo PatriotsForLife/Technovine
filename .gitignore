@@ -1,5 +1,45 @@
+#★ Aways Include...
+	#- 'README' Files
+		!**/README.*
+		!**/*README.*
+	
+	#- Placeholders
+		!**/*.placeholder.*
+		!**/*.placeholder
+		!**/*placeholder.*
+		!**/placeholder.*
+		!**/placeholder
+		
+	#- Dev-Container Files
+		!**/.devcontainer/*
+		!**/.devcontainer.json
+		
+	#- Docker Files
+		!**/.docker/*
+		!**/.dockerignore
+		!**/*.dockerfile
+		!**/Dockerfile
+		!**/docker-compose.*ml
+		!**/*compose.*ml
+		!**/compose.yml
+		
+#★ Temporary Files
+	#- Name: 'temp'
+		**/*.temp*.*
+		**/*.temp.*
+		**/*temp.*
+		**/.*temp*.*
 
+#★ Project Drafts
+	!/.projects/Drafts/_Templates/**
+	/.projects/Drafts/Issues/*.md
+	/.projects/Drafts/Tasks/*.md
 
+	#- Issues
+		/.projects/Drafts/Issues/Comments/*.*
+		/.projects/Drafts/Issues/Descriptions/*.*
 
-#Project Drafts
-/.projects/Drafts/*
+	#- Tasks
+		/.projects/Drafts/Tasks/Comments/*.*
+		/.projects/Drafts/Tasks/Descriptions/*.*
+		
