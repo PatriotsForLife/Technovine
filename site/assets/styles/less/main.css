@@ -45,6 +45,7 @@ body .mainContainer {
   padding-right: 8.33%;
   padding-top: 4.15%;
   padding-bottom: 4.15%;
+  margin-top: -18px;
 }
 body .terminal {
   background-color: hsl(205, 100%, 10%);
