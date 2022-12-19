@@ -1,0 +1,28 @@
+#|===================================|#
+#|  This is the Repository's Global  |#
+#|  '.gitignore' Configuration File  |#
+#|===================================|#
+#|
+#|
+#|===============================|#
+#|  Keep track of the following  |#
+#|===============================|#
+#|
+#| ★ Documentation
+#|	  - [README] File Patterns
+!*.README.*
+!*README.*
+!README.*
+#|
+#| ★ Placeholders
+#|	  - [placeholder] File Patterns
+!.placeholder
+!placeholder
+#|
+#|
+#|====================================|#
+#|  Ignore Temporary Files & Folders  |#
+#|====================================|#
+#|
+#| ★ Documentation
+#|	  - [README] File Patterns
