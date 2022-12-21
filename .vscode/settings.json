@@ -1,2 +1,15 @@
 {
+	"less.compile": {
+		"sourceMap": true,
+		"sourceMapFileInline": true,
+		"javascriptEnabled": true,
+		"out": "../css/",
+		"outExt": ".css",
+		"math": "parens-division",
+		"relativeUrls": false,
+		"compress": false,
+			//!! NEVER use ["compress": true] for a New Spectrum Project
+		"main": "main.less",
+		"ieCompat": false,
+	},
 }

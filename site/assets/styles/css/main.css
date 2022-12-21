@@ -1,0 +1,75 @@
+@import "../../fonts/css-imports/google-fonts.css";
+.headContainer {
+  background-color: hsl(0, 0%, 40%);
+  border-radius: 20px;
+}
+.headContainer header {
+  padding-top: 5px;
+  padding-left: 8.33%;
+  padding-right: 8.33%;
+  padding-bottom: 1px;
+}
+.headContainer header h1 {
+  color: hsl(0, 0%, 100%);
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+.headContainer header h2 {
+  color: hsl(0, 0%, 95%);
+  font-family: "Assistant", sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  margin-top: -1.2em;
+}
+body {
+  background-color: hsl(0, 0%, 10%);
+  background-size: cover;
+  margin: 8.33%;
+}
+body h1,
+body h2,
+body h3,
+body h4 {
+  font-family: "Red Hat Display", sans-serif;
+  color: hsl(205, 75%, 90%);
+}
+body .mainContainer {
+  background-color: hsl(0, 0%, 20%);
+  font-family: "Assistant", sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 2rem;
+  color: hsl(0, 0%, 85%);
+  padding-left: 8.33%;
+  padding-right: 8.33%;
+  padding-top: 4.15%;
+  padding-bottom: 4.15%;
+  margin-top: -18px;
+}
+body aside .rightSidebar-01 {
+  /*  */
+}
+body aside .leftSidebar-01 {
+  /*  */
+}
+body aside .leftInfo-01 {
+  /* properties */
+}
+body aside .rightInfo-01 {
+  /* properties */
+}
+body .terminal {
+  background-color: hsl(205, 100%, 10%);
+  background-attachment: fixed;
+  border: 1.5px solid hsl(195, 14%, 39%);
+  border-radius: 10px;
+  box-shadow: 1px 1px 3px hsla(0, 0%, 0%, 0.9) inset;
+  margin: 8.33%;
+}
+body .terminal pre {
+  padding: 10px;
+  background-attachment: scroll;
+  line-height: 150%;
+}
+/*# sourceMappingURL=./main.css.map */
