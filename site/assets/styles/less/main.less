@@ -78,17 +78,34 @@ body {
 	}
 
 	& aside {
-		.rightSidebar-01 {
-			/*  */
+		& .asideContents {
+			padding-top: 8.33%;
+			padding-left: 8.33%;
+			padding-right: 8.33%;
+			padding-bottom: 8.33%;
+			font-family:"Assistant", sans-serif;
+			lineHeight:		1.65rem;
+			paraSize: 		1rem;
+			paraWeight: 	400;
+			
+			//headerSize: 	2rem;
+			//subHeaderSize: 	$headerSize * 0.8;
+			//HeaderWeight: 	500;
+			//subTitleWeight:	400;
+			//subTitleMargin: -1em;
 		}
-		.leftSidebar-01 {
-			/*  */
+		& .rightSidebar-01 {
+			float: right;
 		}
-		.leftInfo-01 {
-			/* properties */
+		& .leftSidebar-01 {
+			float: left;
 		}
-		.rightInfo-01 {
-			/* properties */
+		& .leftInfo-01 {
+			float: left;
+			width: 50%;
+		}
+		& .rightInfo-01 {
+			float: right;
 		}
 	}
 

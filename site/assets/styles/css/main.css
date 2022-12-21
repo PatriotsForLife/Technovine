@@ -1,75 +1,86 @@
 @import "../../fonts/css-imports/google-fonts.css";
 .headContainer {
-  background-color: hsl(0, 0%, 40%);
-  border-radius: 20px;
+    background-color: hsl(0, 0%, 40%);
+    border-radius: 20px;
 }
 .headContainer header {
-  padding-top: 5px;
-  padding-left: 8.33%;
-  padding-right: 8.33%;
-  padding-bottom: 1px;
+    padding-top: 5px;
+    padding-left: 8.33%;
+    padding-right: 8.33%;
+    padding-bottom: 1px;
 }
 .headContainer header h1 {
-  color: hsl(0, 0%, 100%);
-  font-family: "Red Hat Display", sans-serif;
-  font-size: 2.5rem;
-  font-weight: 500;
+    color: hsl(0, 0%, 100%);
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 2.5rem;
+    font-weight: 500;
 }
 .headContainer header h2 {
-  color: hsl(0, 0%, 95%);
-  font-family: "Assistant", sans-serif;
-  font-size: 2rem;
-  font-weight: 400;
-  margin-top: -1.2em;
+    color: hsl(0, 0%, 95%);
+    font-family: "Assistant", sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-top: -1.2em;
 }
 body {
-  background-color: hsl(0, 0%, 10%);
-  background-size: cover;
-  margin: 8.33%;
+    background-color: hsl(0, 0%, 10%);
+    background-size: cover;
+    margin: 8.33%;
 }
 body h1,
 body h2,
 body h3,
 body h4 {
-  font-family: "Red Hat Display", sans-serif;
-  color: hsl(205, 75%, 90%);
+    font-family: "Red Hat Display", sans-serif;
+    color: hsl(205, 75%, 90%);
 }
 body .mainContainer {
-  background-color: hsl(0, 0%, 20%);
-  font-family: "Assistant", sans-serif;
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 2rem;
-  color: hsl(0, 0%, 85%);
-  padding-left: 8.33%;
-  padding-right: 8.33%;
-  padding-top: 4.15%;
-  padding-bottom: 4.15%;
-  margin-top: -18px;
+    background-color: hsl(0, 0%, 20%);
+    font-family: "Assistant", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2rem;
+    color: hsl(0, 0%, 85%);
+    padding-left: 8.33%;
+    padding-right: 8.33%;
+    padding-top: 4.15%;
+    padding-bottom: 4.15%;
+    margin-top: -18px;
+}
+body aside .asideContents {
+    padding-top: 8.33%;
+    padding-left: 8.33%;
+    padding-right: 8.33%;
+    padding-bottom: 8.33%;
+    font-family: "Assistant", sans-serif;
+    lineheight: 1.65rem;
+    parasize: 1rem;
+    paraweight: 400;
 }
 body aside .rightSidebar-01 {
-  /*  */
+    float: right;
 }
 body aside .leftSidebar-01 {
-  /*  */
+    float: left;
 }
 body aside .leftInfo-01 {
-  /* properties */
+    float: left;
+    width: 50%;
 }
 body aside .rightInfo-01 {
-  /* properties */
+    float: right;
 }
 body .terminal {
-  background-color: hsl(205, 100%, 10%);
-  background-attachment: fixed;
-  border: 1.5px solid hsl(195, 14%, 39%);
-  border-radius: 10px;
-  box-shadow: 1px 1px 3px hsla(0, 0%, 0%, 0.9) inset;
-  margin: 8.33%;
+    background-color: hsl(205, 100%, 10%);
+    background-attachment: fixed;
+    border: 1.5px solid hsl(195, 14%, 39%);
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px hsla(0, 0%, 0%, 0.9) inset;
+    margin: 8.33%;
 }
 body .terminal pre {
-  padding: 10px;
-  background-attachment: scroll;
-  line-height: 150%;
+    padding: 10px;
+    background-attachment: scroll;
+    line-height: 150%;
 }
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL2xlc3MvbWFpbi5sZXNzIiwiLi4vbGVzcy9mb250LW1hcHMubGVzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiUUFBYztBQUtkO0VBWUMsaUNBQUE7RUFDQSxtQkFBQTs7QUFDQSxjQUFFO0VBQ0QsZ0JBQUE7RUFDQSxtQkFBQTtFQUNBLG9CQUFBO0VBQ0EsbUJBQUE7O0FBQ0EsY0FMQyxPQUtDO0VBQ0QsdUJBQUE7RUFDQSxhQ1BZLDZCRE9aO0VBQ0EsaUJBQUE7RUFDQSxnQkFBQTs7QUFFRCxjQVhDLE9BV0M7RUFDRCxzQkFBQTtFQUNBLGFDWm1DLHVCRFluQztFQUNBLGVBQUE7RUFDQSxnQkFBQTtFQUNBLGtCQUFBOztBQU1IO0VBYUMsaUNBQUE7RUFDQSxzQkFBQTtFQUNBLGFBQUE7O0FBR0EsSUFBRTtBQWxCSCxJQWtCTztBQWxCUCxJQWtCVztBQWxCWCxJQWtCZTtFQUNiLGFDeEI0Qiw2QkR3QjVCO0VBQ0EseUJBQUE7O0FBSUQsSUFBRTtFQUNELGlDQUFBO0VBQ0EsYUMzQlMsdUJEMkJUO0VBQ0EsZUFBQTtFQUNBLGdCQUFBO0VBQ0EsaUJBQUE7RUFDQSxzQkFBQTtFQUNBLG1CQUFBO0VBQ0Esb0JBQUE7RUFDQSxrQkFBQTtFQUNBLHFCQUFBO0VBQ0EsaUJBQUE7O0FBR0QsSUFBRSxNQUNEOzs7QUFERCxJQUFFLE1BSUQ7OztBQUpELElBQUUsTUFPRDs7O0FBUEQsSUFBRSxNQVVEOzs7QUFNRCxJQUFFO0VBQ0QscUNBQUE7RUFDQSw0QkFBQTtFQUNBLHNDQUFBO0VBQ0EsbUJBQUE7RUFDQSxrREFBQTtFQUNBLGFBQUE7O0FBR0EsSUFUQyxVQVNDO0VBQ0QsYUFBQTtFQUNBLDZCQUFBO0VBQ0EsaUJBQUEifQ== */
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL2xlc3MvbWFpbi5sZXNzIiwiLi4vbGVzcy9mb250LW1hcHMubGVzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiUUFBYztBQUtkO0VBWUMsaUNBQUE7RUFDQSxtQkFBQTs7QUFDQSxjQUFFO0VBQ0QsZ0JBQUE7RUFDQSxtQkFBQTtFQUNBLG9CQUFBO0VBQ0EsbUJBQUE7O0FBQ0EsY0FMQyxPQUtDO0VBQ0QsdUJBQUE7RUFDQSxhQ1BZLDZCRE9aO0VBQ0EsaUJBQUE7RUFDQSxnQkFBQTs7QUFFRCxjQVhDLE9BV0M7RUFDRCxzQkFBQTtFQUNBLGFDWm1DLHVCRFluQztFQUNBLGVBQUE7RUFDQSxnQkFBQTtFQUNBLGtCQUFBOztBQU1IO0VBYUMsaUNBQUE7RUFDQSxzQkFBQTtFQUNBLGFBQUE7O0FBR0EsSUFBRTtBQWxCSCxJQWtCTztBQWxCUCxJQWtCVztBQWxCWCxJQWtCZTtFQUNiLGFDeEI0Qiw2QkR3QjVCO0VBQ0EseUJBQUE7O0FBSUQsSUFBRTtFQUNELGlDQUFBO0VBQ0EsYUMzQlMsdUJEMkJUO0VBQ0EsZUFBQTtFQUNBLGdCQUFBO0VBQ0EsaUJBQUE7RUFDQSxzQkFBQTtFQUNBLG1CQUFBO0VBQ0Esb0JBQUE7RUFDQSxrQkFBQTtFQUNBLHFCQUFBO0VBQ0EsaUJBQUE7O0FBSUEsSUFEQyxNQUNDO0VBQ0Qsa0JBQUE7RUFDQSxtQkFBQTtFQUNBLG9CQUFBO0VBQ0EscUJBQUE7RUFDQSxhQUFZLHVCQUFaO0VBQ0EsbUJBQUE7RUFDQSxjQUFBO0VBQ0EsZUFBQTs7QUFRRCxJQWpCQyxNQWlCQztFQUNELFlBQUE7O0FBRUQsSUFwQkMsTUFvQkM7RUFDRCxXQUFBOztBQUVELElBdkJDLE1BdUJDO0VBQ0QsV0FBQTtFQUNBLFVBQUE7O0FBRUQsSUEzQkMsTUEyQkM7RUFDRCxZQUFBOztBQUtGLElBQUU7RUFDRCxxQ0FBQTtFQUNBLDRCQUFBO0VBQ0Esc0NBQUE7RUFDQSxtQkFBQTtFQUNBLGtEQUFBO0VBQ0EsYUFBQTs7QUFHQSxJQVRDLFVBU0M7RUFDRCxhQUFBO0VBQ0EsNkJBQUE7RUFDQSxpQkFBQSJ9 */
