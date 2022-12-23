@@ -1,15 +1,15 @@
 require 'compass/import-once/activate'
 # Require any additional compass plugins here.
 
-http_path = "D:/OneDrive - New Spectrum/Dev/Projects/.oven/Technovine/site/pages"
-css_dir = "./assets/styles/css"
-sass_dir = "./assets/styles/sass"
-scss_dir = "./assets/styles/scss"
-javascripts_dir = "./assets/scripts/js"
+http_path = "../"
+css_dir = "../assets/styles/css"
+sass_dir = "../assets/styles/sass"
+scss_dir = "../assets/styles/scss"
+javascripts_dir = "../assets/scripts/js"
 
-fonts_dir = "assets/fonts"
-images_dir = "src/img"
-generated_images_path = "D:/OneDrive - New Spectrum/Dev/Projects/.oven/Technovine/site/src/img/gen"
+fonts_dir = "../assets/fonts"
+images_dir = "../src/img"
+generated_images_path = "../src/img/gen"
 
 output_style = :nested
 
