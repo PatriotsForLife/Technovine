@@ -1,4 +1,6 @@
 @import "../../fonts/css-imports/google-fonts.css";
+@import "../../fonts/css-imports/google-fonts.css";
+@import "../../fonts/css-imports/google-fonts.css";
 .headContainer {
   background-color: hsl(0, 0%, 40%);
   border-radius: 20px;
@@ -34,6 +36,13 @@ body h4 {
   font-family: "Red Hat Display", sans-serif;
   color: hsl(205, 75%, 90%);
 }
+body h1 h1,
+body h2 h1,
+body h3 h1,
+body h4 h1 {
+  font-size: 2rem;
+  font-weight: 500;
+}
 body .mainContainer {
   background-color: hsl(0, 0%, 20%);
   font-family: "Assistant", sans-serif;
@@ -47,25 +56,65 @@ body .mainContainer {
   padding-bottom: 4.15%;
   margin-top: -18px;
 }
-body aside .asideContents {
-  padding-top: 8.33%;
+body aside .leftInfo-01,
+body aside .rightInfo-01 {
+  width: 40%;
+  height: auto;
+}
+body aside .leftInfo-01 h1,
+body aside .rightInfo-01 h1,
+body aside .leftInfo-01 h2,
+body aside .rightInfo-01 h2,
+body aside .leftInfo-01 h3,
+body aside .rightInfo-01 h3,
+body aside .leftInfo-01 h4,
+body aside .rightInfo-01 h4 {
+  font-family: "Red Hat Display", sans-serif;
+  color: hsl(205, 75%, 90%);
+}
+body aside .leftInfo-01 h1 h1,
+body aside .rightInfo-01 h1 h1,
+body aside .leftInfo-01 h2 h1,
+body aside .rightInfo-01 h2 h1,
+body aside .leftInfo-01 h3 h1,
+body aside .rightInfo-01 h3 h1,
+body aside .leftInfo-01 h4 h1,
+body aside .rightInfo-01 h4 h1 {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+body aside .leftInfo-01 h1 h2,
+body aside .rightInfo-01 h1 h2,
+body aside .leftInfo-01 h2 h2,
+body aside .rightInfo-01 h2 h2,
+body aside .leftInfo-01 h3 h2,
+body aside .rightInfo-01 h3 h2,
+body aside .leftInfo-01 h4 h2,
+body aside .rightInfo-01 h4 h2 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+body aside .leftInfo-01 .rightInfo-01,
+body aside .rightInfo-01 .rightInfo-01 {
+  float: right;
+  padding-top: 8.33% / 2;
+  padding-bottom: 8.33% / 2;
   padding-left: 8.33%;
   padding-right: 8.33%;
-  padding-bottom: 8.33%;
-  font-family: "Assistant", sans-serif;
+}
+body aside .leftInfo-01 .leftInfo-01,
+body aside .rightInfo-01 .leftInfo-01 {
+  float: left;
+  padding-top: 8.33% / 2;
+  padding-bottom: 8.33% / 2;
+  padding-left: 8.33%;
+  padding-right: 8.33%;
 }
 body aside .rightSidebar-01 {
   float: right;
 }
 body aside .leftSidebar-01 {
   float: left;
-}
-body aside .leftInfo-01 {
-  float: left;
-  width: 50%;
-}
-body aside .rightInfo-01 {
-  float: right;
 }
 body .terminal {
   background-color: hsl(205, 100%, 10%);
@@ -80,4 +129,13 @@ body .terminal pre {
   background-attachment: scroll;
   line-height: 150%;
 }
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL2xlc3MvbWFpbi5sZXNzIiwiLi4vbGVzcy9mb250LW1hcHMubGVzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiUUFBYztBQUtkO0VBWUMsaUNBQUE7RUFDQSxtQkFBQTs7QUFDQSxjQUFFO0VBQ0QsZ0JBQUE7RUFDQSxtQkFBQTtFQUNBLG9CQUFBO0VBQ0EsbUJBQUE7O0FBQ0EsY0FMQyxPQUtDO0VBQ0QsdUJBQUE7RUFDQSxhQ1BZLDZCRE9aO0VBQ0EsaUJBQUE7RUFDQSxnQkFBQTs7QUFFRCxjQVhDLE9BV0M7RUFDRCxzQkFBQTtFQUNBLGFDWm1DLHVCRFluQztFQUNBLGVBQUE7RUFDQSxnQkFBQTtFQUNBLGtCQUFBOztBQU1IO0VBYUMsaUNBQUE7RUFDQSxzQkFBQTtFQUNBLGFBQUE7O0FBR0EsSUFBRTtBQWxCSCxJQWtCTztBQWxCUCxJQWtCVztBQWxCWCxJQWtCZTtFQUNiLGFDeEI0Qiw2QkR3QjVCO0VBQ0EseUJBQUE7O0FBSUQsSUFBRTtFQUNELGlDQUFBO0VBQ0EsYUMzQlMsdUJEMkJUO0VBQ0EsZUFBQTtFQUNBLGdCQUFBO0VBQ0EsaUJBQUE7RUFDQSxzQkFBQTtFQUNBLG1CQUFBO0VBQ0Esb0JBQUE7RUFDQSxrQkFBQTtFQUNBLHFCQUFBO0VBQ0EsaUJBQUE7O0FBSUEsSUFEQyxNQUNDO0VBQ0Qsa0JBQUE7RUFDQSxtQkFBQTtFQUNBLG9CQUFBO0VBQ0EscUJBQUE7RUFDQSxhQUFjLHVCQUFkOztBQUVELElBUkMsTUFRQztFQUNELFlBQUE7O0FBRUQsSUFYQyxNQVdDO0VBQ0QsV0FBQTs7QUFFRCxJQWRDLE1BY0M7RUFDRCxXQUFBO0VBQ0EsVUFBQTs7QUFFRCxJQWxCQyxNQWtCQztFQUNELFlBQUE7O0FBS0YsSUFBRTtFQUNELHFDQUFBO0VBQ0EsNEJBQUE7RUFDQSxzQ0FBQTtFQUNBLG1CQUFBO0VBQ0Esa0RBQUE7RUFDQSxhQUFBOztBQUdBLElBVEMsVUFTQztFQUNELGFBQUE7RUFDQSw2QkFBQTtFQUNBLGlCQUFBIn0= */
+/*
+	& .asideContents {
+		font-family:		"Assistant", sans-serif;
+		padding-top: 		8.33%;
+		padding-left: 		8.33%;
+		padding-right: 		8.33%;
+		padding-bottom: 	8.33%;
+	}
+*/
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL2xlc3MvbWFpbi5sZXNzIiwiLi4vbGVzcy90aGVtZXMubGVzcyIsIi4uL2xlc3MvZm9udC1tYXBzLmxlc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IlFBQWM7UUNBQTtRQ0FBO0FGS2Q7RUFZQyxpQ0FBQTtFQUNBLG1CQUFBOztBQUNBLGNBQUU7RUFDRCxnQkFBQTtFQUNBLG1CQUFBO0VBQ0Esb0JBQUE7RUFDQSxtQkFBQTs7QUFDQSxjQUxDLE9BS0M7RUFDRCx1QkFBQTtFQUNBLGFFRk8sNkJGRVA7RUFDQSxpQkFBQTtFQUNBLGdCQUFBOztBQUVELGNBWEMsT0FXQztFQUNELHNCQUFBO0VBQ0EsYUVQOEIsdUJGTzlCO0VBQ0EsZUFBQTtFQUNBLGdCQUFBO0VBQ0Esa0JBQUE7O0FBTUg7RUFnQkMsaUNBQUE7RUFDQSxzQkFBQTtFQUNBLGFBQUE7O0FBR0EsSUFBRTtBQXJCSCxJQXFCTztBQXJCUCxJQXFCVztBQXJCWCxJQXFCZTtFQUNiLGFFcEJtQiw2QkZvQm5CO0VBQ0EseUJBQUE7O0FBRUEsSUFKQyxHQUlDO0FBQUYsSUFKSyxHQUlIO0FBQUYsSUFKUyxHQUlQO0FBQUYsSUFKYSxHQUlYO0VBQ0QsZUFBQTtFQUNBLGdCQUFBOztBQU1GLElBQUU7RUFDRCxpQ0FBQTtFQUNBLGFFOUJHLHVCRjhCSDtFQUNBLGVBQUE7RUFDQSxnQkFBQTtFQUNBLGlCQUFBO0VBQ0Esc0JBQUE7RUFDQSxtQkFBQTtFQUNBLG9CQUFBO0VBQ0Esa0JBQUE7RUFDQSxxQkFBQTtFQUNBLGlCQUFBOztBQUtBLElBRkMsTUFFQztBQUZILElBQUUsTUFFZTtFQUNmLFVBQUE7RUFDQSxZQUFBOztBQUVBLElBTkEsTUFFQyxhQUlDO0FBQUYsSUFOQSxNQUVlLGNBSWI7QUFKSCxJQUZDLE1BRUMsYUFJSztBQU5SLElBQUUsTUFFZSxjQUlUO0FBSlAsSUFGQyxNQUVDLGFBSVM7QUFOWixJQUFFLE1BRWUsY0FJTDtBQUpYLElBRkMsTUFFQyxhQUlhO0FBTmhCLElBQUUsTUFFZSxjQUlEO0VBQ2IsYUV2QkosNkJGdUJJO0VBQ0EseUJBQUE7O0FBRUEsSUFWRCxNQUVDLGFBSUMsR0FJQztBQUFGLElBVkQsTUFFZSxjQUliLEdBSUM7QUFBRixJQVZELE1BRUMsYUFJSyxHQUlIO0FBQUYsSUFWRCxNQUVlLGNBSVQsR0FJSDtBQUFGLElBVkQsTUFFQyxhQUlTLEdBSVA7QUFBRixJQVZELE1BRWUsY0FJTCxHQUlQO0FBQUYsSUFWRCxNQUVDLGFBSWEsR0FJWDtBQUFGLElBVkQsTUFFZSxjQUlELEdBSVg7RUFDRCxpQkFBQTtFQUNBLGdCQUFBOztBQUVELElBZEQsTUFFQyxhQUlDLEdBUUM7QUFBRixJQWRELE1BRWUsY0FJYixHQVFDO0FBQUYsSUFkRCxNQUVDLGFBSUssR0FRSDtBQUFGLElBZEQsTUFFZSxjQUlULEdBUUg7QUFBRixJQWRELE1BRUMsYUFJUyxHQVFQO0FBQUYsSUFkRCxNQUVlLGNBSUwsR0FRUDtBQUFGLElBZEQsTUFFQyxhQUlhLEdBUVg7QUFBRixJQWRELE1BRWUsY0FJRCxHQVFYO0VBQ0QsaUJBQUE7RUFDQSxnQkFBQTs7QUFJRixJQXBCQSxNQUVDLGFBa0JDO0FBQUYsSUFwQkEsTUFFZSxjQWtCYjtFQUNELFlBQUE7RUFDQSxzQkFBQTtFQUNBLHlCQUFBO0VBQ0EsbUJBQUE7RUFDQSxvQkFBQTs7QUFHRCxJQTVCQSxNQUVDLGFBMEJDO0FBQUYsSUE1QkEsTUFFZSxjQTBCYjtFQUNELFdBQUE7RUFDQSxzQkFBQTtFQUNBLHlCQUFBO0VBQ0EsbUJBQUE7RUFDQSxvQkFBQTs7QUFLRixJQXRDQyxNQXNDQztFQUNELFlBQUE7O0FBRUQsSUF6Q0MsTUF5Q0M7RUFDRCxXQUFBOztBQUtGLElBQUU7RUFDRCxxQ0FBQTtFQUNBLDRCQUFBO0VBQ0Esc0NBQUE7RUFDQSxtQkFBQTtFQUNBLGtEQUFBO0VBQ0EsYUFBQTs7QUFHQSxJQVRDLFVBU0M7RUFDRCxhQUFBO0VBQ0EsNkJBQUE7RUFDQSxpQkFBQSJ9 */
