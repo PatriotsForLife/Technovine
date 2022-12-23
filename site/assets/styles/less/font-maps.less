@@ -21,6 +21,7 @@
 }
 
 #fonts.body {
+//★ Titles & Special Headers
 	.families(headers) {
 		titles: 		"Red Hat Display", sans-serif;
 		subTitles: 		"Assistant", sans-serif;
@@ -38,8 +39,9 @@
 		hShadow: 	0.75 0.75 2.5 2 $shadowColor;
 	}
 	
-	// ===========================
+	//!! ===========================
 	
+//★ Body Text (Paragraphs, etc)
 	.families(body) {
 		headers: 		"Red Hat Display", sans-serif;
 		subHeaders: 	"Assistant", sans-serif;
@@ -51,7 +53,7 @@
 		//- Header Settings
 		headerSize: 	2rem;
 		subHeaderSize: 	$headerSize * 0.8;
-		HeaderWeight: 	500;
+		headerWeight: 	500;
 		subTitleWeight:	400;
 		subTitleMargin: -1em;
 		
@@ -65,19 +67,41 @@
 		lineHeight: 	2rem;
 		codeWeight: 	500;
 	}
-	.properties(aside) {		
-		lineHeight:		1.65rem;
-		paraSize: 		1rem;
-		paraWeight: 	400;
-		
-		headerSize: 	1.5rem;
-		subHeaderSize: 	$headerSize * 0.8;
-		HeaderWeight: 	500;
-		subTitleWeight:	400;
-		subTitleMargin: -1em;
-	}
 	.styles(body) {
 		shadowColor: 	hsla(0, 0%, 0%, 0.8);
 		hShadow: 		0.75 0.75 2.5 2 $shadowColor;
 	}
 }
+
+#fonts.aside {
+//★ 'Info' Content
+	.families(info01) {
+		headers: 		"Red Hat Display", sans-serif;
+		subHeaders: 	"Assistant", sans-serif;
+		para: 			"Assistant", sans-serif;
+		subText: 		"Assistant", sans-serif;
+		code: 			"Fira Code", monospace;
+	}
+	.properties(info01) {
+		//- Header Settings
+		headerSize: 		1.5rem;
+		subHeaderSize: 		$headerSize * 0.8;
+		HeaderWeight: 		500;
+		subHeaderWeight:	400;
+		subHeaderMargin: 	-1em;
+		
+		//- Paragraph Settings
+		lineHeight:		1.65rem;
+		paraSize: 		1rem;
+		paraWeight: 	400;
+		
+	.styles(info01) {
+		shadowColor: 	hsla(0, 0%, 0%, 0.8);
+		hShadow: 		0.75 0.75 2.5 2 $shadowColor;
+	}
+}
+
+
+
+
+

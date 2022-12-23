@@ -45,6 +45,8 @@ body {
 @body: 			#theme.dark.cont(body);
 @mainCont: 		#theme.dark.cont(main);
 @asideCont: 	#theme.dark.cont(aside);
+@infoFonts_01: 	#fonts.aside.families(info01);
+@infoText_01: 	#fonts.aside.families(info01);
 @termCont:		#theme.dark.cont(term);
 @codeCont:		#theme.dark.cont(code);
 @fonts: 		#fonts.body.families(body);
@@ -63,10 +65,9 @@ body {
 		color: @txtColors[headers];
 		
 		& h1 {
-			font-size: 			@var[value];
-			font-weight: 		@var[value];
-			font-size:			@text[paraSize];
-			line-height: 		@text[lineHeight];
+			font-size: 			@text[headerSize];
+			font-weight: 		@text[headerWeight];
+			//line-height: 		@text[lineHeight];
 		}
 	}
 
@@ -87,39 +88,43 @@ body {
 
 	& aside {
 	//- Universal Properties
-		& .asideContents {
-			font-family:		"Assistant", sans-serif;
-			padding-top: 		8.33%;
-			padding-left: 		8.33%;
-			padding-right: 		8.33%;
-			padding-bottom: 	8.33%;
-		}
-		
 		& .leftInfo-01, .rightInfo-01 {
-			width: 50%;
-			height: auto;
+			width: 				50%;
+			height: 			auto;
 			
 			& h1, h2, h3, h4 {
-				font-family: 	@var[value];
-				color: 			@var[value];
+				font-family: 	@infoFonts_01[headers];
+				color: 			@txtColors[headers];
 				
 				& h1 {
-					font-size:	@var[value];
+					font-size:		@info_Text[headerSize];
+					font-weight: 	@info_Text[headerWeight];
+				}
+				& h2 {
+					font-size:		@info_Text[subHeaderSize];
+					font-weight: 	@info_Text[subHeaderWeight];
 				}
 			}
 			
 			& .rightInfo-01 {
-				float: right;
+				float: 				right;
+				padding-top: 		@asideCont[vertPadding];
+				padding-bottom:		@asideCont[vertPadding];
+				padding-left: 		@asideCont[sidePadding];
+				padding-right: 		@asideCont[sidePadding];
 			}
 		
 			& .leftInfo-01 {
-				float: left;
+				float: 				left;
+				padding-top: 		@asideCont[vertPadding];
+				padding-bottom:		@asideCont[vertPadding];
+				padding-left: 		@asideCont[sidePadding];
+				padding-right: 		@asideCont[sidePadding];
 			}
 		}
 		
 	//- Sidebars
 		& .rightSidebar-01 {
-			
 			float: right;
 		}
 		& .leftSidebar-01 {
@@ -129,18 +134,33 @@ body {
 
 	//- Terminal
 	& .terminal {
-		background-color: @colorsBG[codeTerm];
-		background-attachment: @termCont[termAttach];
-		border: @termCont[termBorder];
-		border-radius: @termCont[corners];
-		box-shadow: @termCont[innerShadow];
-		margin: 8.33%;
+		background-color: 		@colorsBG[codeTerm];
+		background-attachment: 	@termCont[termAttach];
+		border: 				@termCont[termBorder];
+		border-radius: 			@termCont[corners];
+		box-shadow: 			@termCont[innerShadow];
+		margin: 				8.33%;
 
 		//- Code
 		& pre {
-			padding: @codeCont[consolePadd];
-			background-attachment: @codeCont[codeAttach];
-			line-height: @codeCont[lineHeight];
+			padding: 				@codeCont[consolePadd];
+			background-attachment: 	@codeCont[codeAttach];
+			line-height: 			@codeCont[lineHeight];
 		}
 	}
 }
+
+
+
+
+/*
+	& .asideContents {
+		font-family:		"Assistant", sans-serif;
+		padding-top: 		8.33%;
+		padding-left: 		8.33%;
+		padding-right: 		8.33%;
+		padding-bottom: 	8.33%;
+	}
+*/
+
+
