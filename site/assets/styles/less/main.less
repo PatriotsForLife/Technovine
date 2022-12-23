@@ -46,7 +46,7 @@ body {
 @mainCont: 		#theme.dark.cont(main);
 @asideCont: 	#theme.dark.cont(aside);
 @infoFonts: 	#fonts.aside.families(info);
-@infoText_01: 	#fonts.aside.families(info);
+@infoText:	 	#fonts.aside.families(info);
 @termCont:		#theme.dark.cont(term);
 @codeCont:		#theme.dark.cont(code);
 @fonts: 		#fonts.body.families(body);
@@ -97,12 +97,12 @@ body {
 				color: 			@txtColors[headers];
 				
 				& h1 {
-					font-size:		@info_Text[headerSize];
-					font-weight: 	@info_Text[headerWeight];
+					font-size:		@infoText[headerSize];
+					font-weight: 	@infoText[headerWeight];
 				}
 				& h2 {
-					font-size:		@info_Text[subHeaderSize];
-					font-weight: 	@info_Text[subHeaderWeight];
+					font-size:		@infoText[subHeaderSize];
+					font-weight: 	@infoText[subHeaderWeight];
 				}
 			}
 			
