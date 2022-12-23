@@ -45,8 +45,8 @@ body {
 @body: 			#theme.dark.cont(body);
 @mainCont: 		#theme.dark.cont(main);
 @asideCont: 	#theme.dark.cont(aside);
-@infoFonts_01: 	#fonts.aside.families(info01);
-@infoText_01: 	#fonts.aside.families(info01);
+@infoFonts: 	#fonts.aside.families(info);
+@infoText_01: 	#fonts.aside.families(info);
 @termCont:		#theme.dark.cont(term);
 @codeCont:		#theme.dark.cont(code);
 @fonts: 		#fonts.body.families(body);
@@ -93,7 +93,7 @@ body {
 			height: 			auto;
 			
 			& h1, h2, h3, h4 {
-				font-family: 	@infoFonts_01[headers];
+				font-family: 	@infoFonts[headers];
 				color: 			@txtColors[headers];
 				
 				& h1 {
