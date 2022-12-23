@@ -69,6 +69,60 @@ ol .t3 {
 }
 ```
 
+### HTML Syntax
+```html
+<ol class="t1">
+	<li>First Item</li>
+	<li>
+		Second Item
+		<ol class="t2">
+			<li>
+				Sub-Item
+				<ol class="t3">
+					<li>Sub-Item</li>
+					<li>Sub-Item</li>
+					<li>Sub-Item</li>
+				</ol>
+			</li>
+			<li>Sub-Item</li>
+		</ol>
+	</li>
+	<li>Third Item</li>
+</ol>
+```
+
+<br />
+
+### Ordered-List Output
+<style>
+	ol .t1 {
+		list-style-type: decimal-leading-zero;
+	}
+	ol .t2 {
+		list-style-type: lower-alpha;
+	}
+	ol .t3 {
+		list-style-type: lower-roman;
+	}
+</style>
+<ol class="t1">
+	<li>First Item</li>
+	<li>
+		Second Item
+		<ol class="t2">
+			<li>
+				Sub-Item
+				<ol class="t3">
+					<li>Sub-Item</li>
+					<li>Sub-Item</li>
+					<li>Sub-Item</li>
+				</ol>
+			</li>
+			<li>Sub-Item</li>
+		</ol>
+	</li>
+	<li>Third Item</li>
+</ol>
 
 
 
