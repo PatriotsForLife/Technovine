@@ -1,6 +1,6 @@
-@import (css) "../../fonts/css-imports/google-fonts.css";
-@import (less) "./themes.less";
-@import (less) "./font-maps.less";
+@import (css)	"../../fonts/css-imports/google-fonts.css";
+@import (less)	"./themes.less";
+@import (less)	"./font-maps.less";
 
 
 .headContainer {
@@ -44,6 +44,7 @@ body {
 @colorsBG: 		#theme.dark.colors(bg);
 @body: 			#theme.dark.cont(body);
 @mainCont: 		#theme.dark.cont(main);
+@asideCont: 	#theme.dark.cont(aside);
 @termCont:		#theme.dark.cont(term);
 @codeCont:		#theme.dark.cont(code);
 @fonts: 		#fonts.body.families(body);
@@ -60,6 +61,13 @@ body {
 	& h1, h2, h3, h4 {
 		font-family: @fonts[headers];
 		color: @txtColors[headers];
+		
+		& h1 {
+			font-size: 			@var[value];
+			font-weight: 		@var[value];
+			font-size:			@text[paraSize];
+			line-height: 		@text[lineHeight];
+		}
 	}
 
 	//- Main Container
@@ -78,25 +86,44 @@ body {
 	}
 
 	& aside {
+	//- Universal Properties
 		& .asideContents {
-			padding-top: 8.33%;
-			padding-left: 8.33%;
-			padding-right: 8.33%;
-			padding-bottom: 8.33%;
 			font-family:		"Assistant", sans-serif;
+			padding-top: 		8.33%;
+			padding-left: 		8.33%;
+			padding-right: 		8.33%;
+			padding-bottom: 	8.33%;
 		}
+		
+		& .leftInfo-01, .rightInfo-01 {
+			width: 50%;
+			height: auto;
+			
+			& h1, h2, h3, h4 {
+				font-family: 	@var[value];
+				color: 			@var[value];
+				
+				& h1 {
+					font-size:	@var[value];
+				}
+			}
+			
+			& .rightInfo-01 {
+				float: right;
+			}
+		
+			& .leftInfo-01 {
+				float: left;
+			}
+		}
+		
+	//- Sidebars
 		& .rightSidebar-01 {
+			
 			float: right;
 		}
 		& .leftSidebar-01 {
 			float: left;
-		}
-		& .leftInfo-01 {
-			float: left;
-			width: 50%;
-		}
-		& .rightInfo-01 {
-			float: right;
 		}
 	}
 
